@@ -4,6 +4,10 @@ header{
 }
 body {
     background-color: whitesmoke;
+    font-family: 'Quicksand', sans-serif;
+    a.photo:hover
+        padding: 10px;
+      }
 }
 main {
     background-color: white;
@@ -15,3 +19,4 @@ main {
   .finstagram-post .user-info img {
     border-radius: 25%;
   }
+  
