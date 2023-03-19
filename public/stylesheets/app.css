@@ -2,6 +2,12 @@ header{
     background-color: #244751;
     color: aqua;
 }
+.header img {
+  border-radius: ;25%
+}
+.header h1 {
+  .bolded { font-weight: bold; }
+}
 body {
     background-color: whitesmoke;
     font-family: 'Quicksand', sans-serif;
