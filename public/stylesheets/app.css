@@ -2,18 +2,16 @@ header{
     background-color: #244751;
     color: aqua;
 }
-.header img {
-  border-radius: ;25%
+.header-info{
+  display:flex;
 }
-.header h1 {
-  .bolded { font-weight: bold; }
+.header-info img{
+  border-radius: 50%;
 }
 body {
     background-color: whitesmoke;
     font-family: 'Quicksand', sans-serif;
-    a.photo:hover
-        padding: 10px;
-      }
+    
 }
 main {
     background-color: white;
@@ -26,3 +24,10 @@ main {
     border-radius: 25%;
   }
   
+a.photo {
+transition: padding 0.5s;
+}
+
+a.photo:hover{
+  padding: 10px;
+}
