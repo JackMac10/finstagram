@@ -6,7 +6,7 @@ header{
   display:flex;
 }
 .header-info img{
-  border-radius: 50%;
+  border-radius: 15%;
 }
 body {
     background-color: whitesmoke;
