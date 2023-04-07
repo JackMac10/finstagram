@@ -4,14 +4,15 @@ header{
 }
 .header-info{
   display:flex;
+  
 }
 .header-info img{
   border-radius: 15%;
+  margin: 15px;
 }
 body {
     background-color: whitesmoke;
     font-family: 'Quicksand', sans-serif;
-    
 }
 main {
     background-color: white;
@@ -21,6 +22,7 @@ main {
     margin-bottom: 48px;
   }
   .finstagram-post .user-info img {
+    width: 40px;
     border-radius: 25%;
   }
   

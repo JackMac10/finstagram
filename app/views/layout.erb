@@ -8,6 +8,24 @@
         <title>Finstagram</title>
     </head>
     <body>
-    <%= yield %>          
+        <header>
+            <div class = "header-info">
+                <img src="https://live.staticflickr.com/65535/52754770983_28922051f1_s.jpg" width="70" height="70" alt="FinstagramHeaderLogo"/>
+                <h1> 
+                <a href="/"> Finstagram </a>
+                </h1> 
+            </div>
+            <div class="login-info">
+                <% if current_user %>
+                    <%= current_user.username %>
+                    <a href="/logout">Logout</a>
+                <% else %>
+                    <a href="/login">Login</a>
+                    <a href="/signup">Signup</a>
+            <% end %>
+        </header>
+        <main role="main">
+            <%= yield %>
+        </main>
     </body>
 </html>
