@@ -36,7 +36,7 @@ header > .login-info {
 }
 
 main {
-  width: 450px;
+  width: 650px;
   margin: 0 auto;
 }
 
@@ -96,8 +96,8 @@ main {
 }
 
 .actions button.user-like {
-  color: #FF2600;
-  border-color: #FF2600;
+  color: #1500ff;
+  border-color: #1900ff;
 }
 
 .actions .comment-count {

@@ -1,17 +1,47 @@
 <h2>New Splash!</h2>
 
+
+
 <ul class="errors">
-    <% @finstagram_post.errors.full_messages.each do |message| %> 
-        <li><%= message %></li>
-    <% end %>
+  <% @finstagram_post.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+  <% end %>
 </ul>
 
+<img id="preview" src="" alt="Finstagram Post Preview" style="display: none; width: 200px;">
+
 <form action="/finstagram_posts" method="POST">
-    <div class="form-group">
-        <label form="photo_url">Photo URL</label>
-        <input type="text" id="photo_url" name="photo_url">
-    </div>
-    <div class="form-group">
-        <button class="button" type="submit">Upload New Post!</button>
-    </div>
+  <div class="form-group">
+    <label for="photo_url">Photo URL</label>
+    <input type="text" id="photo_url" name="photo_url">
+  </div>
+  <div class="form-group">
+    <button class="button" type="submit">Upload New Post!</button>
+  </div>
 </form>
+
+<script>
+  // listen and wait for the DOM to be fully loaded
+  document.addEventListener("DOMContentLoaded", function() {
+    // get elements from the DOM and assign as variables
+    var photoUrlElm = document.getElementById("photo_url");
+    var previewElm = document.getElementById("preview");
+
+    // listen for the 'blur' event of the input element
+    photoUrlElm.addEventListener("blur", function(event) {
+      // get the value that's typed into the input
+      var url = event.target.value;
+
+      // if the string has a character or more; else the string is empty
+      if(url) {
+        // modify the img element src attribute
+        previewElm.setAttribute("src", url);
+        // display the img element
+        previewElm.style.display = "block";
+      } else {
+        // hide the img element
+        previewElm.style.display = "none";
+      }
+    });
+  });
+</script> 

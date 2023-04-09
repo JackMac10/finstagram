@@ -11,7 +11,7 @@ header{
   margin: 15px;
 }
 body {
-    background-color: whitesmoke;
+    background-color: rgb(206, 230, 237);
     font-family: 'Quicksand', sans-serif;
 }
 main {
@@ -32,4 +32,19 @@ transition: padding 0.5s;
 
 a.photo:hover{
   padding: 10px;
+}
+
+
+@media screen and (max-width:650px) {
+  main {
+    width: 100%;
+  }
+
+  .user-info h2 {
+    font-size: 1.2em;
+  }
+
+  .user-info h3 {
+    font-size: 0.9em;
+  }
 }
